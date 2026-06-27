@@ -157,34 +157,6 @@ Interactive Filters:
 - Implement trend forecasting and anomaly detection.
 - Deploy the dashboard using the Power BI Service.
 
-## Repository Structure
-
-```text
-sales-analytics-dashboard/
-├── README.md
-├── LICENSE
-├── PROJECT_PLAN.md
-├── data/
-│   └── raw/
-├── sql/
-│   ├── schema/
-│   ├── analysis/
-│   └── validation/
-├── powerbi/
-│   ├── screenshots/
-│   └── sales_analytics_dashboard.pbix
-├── docs/
-│   ├── project_plan.md
-│   ├── dataset_inventory.md
-│   ├── table_relationships.md
-│   ├── data_quality_report.md
-│   ├── star_schema_recommendation.md
-│   ├── data_dictionary.md
-│   ├── business_questions.md
-│   ├── dashboard_specification.md
-│   └── research_log.md
-```
-
 ## Documentation
 
 Additional project documentation can be found in the docs folder:
