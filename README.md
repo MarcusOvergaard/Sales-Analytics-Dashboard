@@ -2,29 +2,20 @@
 
 ## Project Overview
 
-This project is an end-to-end Business Intelligence portfolio project using the Olist Brazilian E-Commerce Public Dataset.
+This project transforms the Olist Brazilian E-Commerce dataset into a PostgreSQL star schema and an interactive Power BI dashboard for sales analysis.
 
-The goal is to simulate the workflow of a Junior Data Analyst: inspect raw data, design a relational model, write SQL analysis, build a Power BI dashboard, and communicate business findings clearly.
+## Skills Demonstrated
 
-## Final Deliverables
-
-This project delivers:
-
-- PostgreSQL star schema design
-- SQL-based data validation framework
-- Business analysis queries
-- Interactive Power BI dashboard
-- Documentation and data modeling artifacts
-
-The project simulates a complete Business Intelligence workflow from raw data ingestion to executive dashboard reporting.
-
-## Project Outcome
-
-The project successfully transformed raw e-commerce transaction data into a dimensional star schema, validated the data model using SQL, and delivered an interactive Power BI dashboard for sales analysis.
+- PostgreSQL
+- SQL
+- Power BI
+- Star schema design
+- Data validation
+- Dashboard development
 
 ## Business Problem
 
-An e-commerce marketplace needs a clearer view of sales performance across revenue, orders, customers, products, and regions.
+How can an e-commerce marketplace better understand its sales performance?
 
 - How is revenue changing over time?
 - Which regions drive the most sales?
@@ -34,36 +25,9 @@ An e-commerce marketplace needs a clearer view of sales performance across reven
 
 ## Dataset
 
-Olist Brazilian E-Commerce Public Dataset
-
-Source:
-https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
-
-Raw data location:
-`data/raw/`
-
-Main tables:
-
-| Table | Description |
-|---|---|
-| `customers` | Customer identifiers and location fields. |
-| `orders` | Order status and lifecycle timestamps. |
-| `order_items` | Item-level sales records with product, seller, price, and freight value. |
-| `order_payments` | Payment method, installments, and payment value. |
-| `order_reviews` | Review scores and optional review comments. |
-| `products` | Product categories and product attributes. |
-| `sellers` | Seller identifiers and location fields. |
-| `geolocation` | ZIP-prefix geography reference data. |
-| `product_category_translation` | Portuguese-to-English product category labels. |
-
-## Tools Used
-
-- PostgreSQL
-- DBeaver
-- Power BI
-- Git / GitHub
-- SQL
-- Markdown Documentation
+- Source: Olist Brazilian E-Commerce Public Dataset (Kaggle)
+- Raw data: `data/raw/`
+- Main tables: customers, orders, order_items, payments, reviews, products, sellers, and geolocation.
 
 ## Data Model
 
@@ -82,58 +46,11 @@ Grain
 
 One row per order item.
 
-## SQL Analysis
-
-Key business analysis queries include:
-
-- Revenue by Month
-- Revenue by Product Category
-- Revenue by Customer State
-- Top Product Categories
-- Top Sellers
-
-The analysis layer demonstrates joins, aggregations, grouping, sorting, dimensional modeling, and business KPI reporting.
-
-The project demonstrates:
-
-- Joins
-- Aggregations
-- GROUP BY analysis
-- Dimensional modeling
-- Data validation
-- Business KPI reporting
-
-## Power BI Dashboard
-
-Dashboard Pages:
-
-## Dashboard Screenshots
+## Dashboard
 
 ![Executive Overview](powerbi/screenshots/executive_overview.png)
 
-### Executive Overview
-
-KPIs:
-
-- Total Revenue
-- Total Orders
-- Items Sold
-- Average Order Value
-
-Visuals:
-
-- Revenue by Month
-- Revenue by Product Category
-- Revenue by Customer State
-- Top Sellers
-- Top Product Categories
-
-Interactive Filters:
-
-- Year
-- Month
-- Customer State
-- Product Category
+The dashboard summarizes revenue, orders, average order value, top categories, top sellers, and sales by state with interactive filters.
 
 ## Key Findings
 
@@ -156,17 +73,6 @@ Interactive Filters:
 - Create additional dashboard pages for seller performance and operations.
 - Implement trend forecasting and anomaly detection.
 - Deploy the dashboard using the Power BI Service.
-
-## Documentation
-
-Additional project documentation can be found in the docs folder:
-
-- Dataset Inventory
-- Data Quality Report
-- Data Dictionary
-- Business Questions
-- Dashboard Specification
-- Research Log
 
 ## License
 
